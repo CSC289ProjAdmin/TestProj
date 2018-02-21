@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WinFormsProj {
-    class Dummy {
+    public class Dummy {
         public static string GetDummyString() {
             return "dummy";
         }
