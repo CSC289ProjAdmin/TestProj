@@ -1,0 +1,2 @@
+any files you add or modify in this folder, Sourcetree will 
+automatically pick up when you go back to it
