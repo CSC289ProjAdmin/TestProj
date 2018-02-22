@@ -1,2 +1,7 @@
 any files you add or modify in this folder, Sourcetree will 
 automatically pick up when you go back to it
+
+now we make more changes to the file
+repeat, stage and commit every now and again
+...
+...
