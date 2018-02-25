@@ -7,7 +7,14 @@ using System.Threading.Tasks;
 namespace WinFormsProj
 {
     //added class
-    class Class1
+    public class Class1
     {
+        public static string Dummy
+        {
+            get
+            {
+                return "Dummy";
+            }
+        }
     }
 }

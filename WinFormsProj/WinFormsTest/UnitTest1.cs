@@ -9,5 +9,15 @@ namespace WinFormsTest {
             string testStr = WinFormsProj.Dummy.GetDummyString();
             Assert.AreEqual(testStr, "dummy");
         }
+    } 
+    [TestClass]
+    public class UnitTest2
+    {
+        [TestMethod]
+        public void TestMethod2()
+        {
+            string testStr = WinFormsProj.Class1.Dummy;
+            Assert.AreEqual(testStr, "Dummy");
+        }
     }
 }
