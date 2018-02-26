@@ -23,6 +23,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>True</GenerateCreateScript>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -62,12 +63,16 @@
   <ItemGroup>
     <Build Include="FirstTable.sql" />
     <Build Include="SecondTable.sql" />
+    <Build Include="ThirdTable.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SecondDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SecondDB.refactorlog" />
   </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\sqlpackage.exe" /action:publish /sourcefile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).dacpac" /p:CreateNewDatabase=true /profile:"$(ProjectDir)$(TargetDatabase).publish.xml"</PostBuildEvent>

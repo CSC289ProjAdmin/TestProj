@@ -24,7 +24,7 @@ namespace WinFormsProj {
             conn.Open();
             SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             rdr.Read(); // first line
-            MessageBox.Show($"{rdr["Amount"]}");
+            MessageBox.Show($"{rdr["Name"]}");
             rdr.Close();
         }
     }
