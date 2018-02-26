@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="FirstTable.sql" />
+    <Build Include="SecondTable.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SecondDB.publish.xml" />
