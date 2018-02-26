@@ -61,8 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="TestTable.sql" />
+    <Build Include="PubTest.sql" />
+    <Build Include="Another.sql" />
+    <Build Include="PublishTest.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="WinFormsDb.publish.xml" />
+    <None Include="WinFormsDb.publish.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\sqlpackage.exe" /action:publish /sourcefile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).dacpac" /profile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).publish.xml"
+</PostBuildEvent>
+  </PropertyGroup>
 </Project>
