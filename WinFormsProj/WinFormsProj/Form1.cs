@@ -14,7 +14,12 @@ namespace WinFormsProj {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
-            string connStr = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=WinFormsDb;Integrated Security=True;Pooling=False;Connect Timeout=30";
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["FileAidDbConnectionString"];
+            string connStr;
+            if (settings == null) {
+                return;
+            }
+                connStr = settings.ConnectionString;
             SqlConnection conn = new SqlConnection(connStr);
             string query = "Select * From TestTable";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -23,7 +28,7 @@ namespace WinFormsProj {
             SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
 
             rdr.Read(); // first line
-            string text = $"{rdr["Amount"]:c}";
+            string text = $"{rdr["Name"]}";
             
             rdr.Close();
 
