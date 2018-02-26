@@ -62,4 +62,7 @@
   <ItemGroup>
     <Build Include="TestTable.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="WinFormsDb.publish.xml" />
+  </ItemGroup>
 </Project>
