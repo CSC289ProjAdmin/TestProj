@@ -67,17 +67,14 @@
     <Build Include="dbo\Tables\PublishTest.sql" />
     <Build Include="dbo\Tables\PubTest.sql" />
     <Build Include="dbo\Tables\TestTable.sql" />
+    <PostDeploy Include="Scripts\Script.InsertStaticData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="WinFormsDb.publish.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Scripts\Script.InsertStaticData.sql" />
-  </ItemGroup>
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\sqlpackage.exe" /action:publish /sourcefile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).dacpac" /p:CreateNewDatabase=true /profile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).publish.xml"
-</PostBuildEvent>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\sqlpackage.exe" /action:publish /sourcefile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).dacpac" /p:CreateNewDatabase=true /profile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).publish.xml"</PostBuildEvent>
   </PropertyGroup>
 </Project>
