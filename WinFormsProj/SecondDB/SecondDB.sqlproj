@@ -57,8 +57,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="FirstTable.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SecondDB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\sqlpackage.exe" /action:publish /sourcefile:"$(ProjectDir)$(OutputPath)$(TargetDatabase).dacpac" /p:CreateNewDatabase=true /profile:"$(ProjectDir)$(TargetDatabase).publish.xml"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
