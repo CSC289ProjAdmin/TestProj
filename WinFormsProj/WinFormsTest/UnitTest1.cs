@@ -7,7 +7,16 @@ namespace WinFormsTest {
         [TestMethod]
         public void TestMethod1() {
             string testStr = WinFormsProj.Dummy.GetDummyString();
-            Assert.AreEqual(testStr, "dummy");
+            Assert.AreEqual("dummy", testStr);
         }
+
+
+        [TestMethod]
+        public void TestMethodSum()
+        {
+            int x = 10, y = 15;
+            Assert.AreEqual(x + y, WinFormsProj.DetriceClassSum.GetSum(x, y));
+        }
+
     }
 }
