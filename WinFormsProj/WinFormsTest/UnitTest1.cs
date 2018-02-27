@@ -30,5 +30,12 @@ namespace WinFormsTest {
             int x = 10, y = 15;
             Assert.AreEqual(x - y, WinFormsProj.DetriceClass3.Subtract(x, y));
         }
+
+        [TestMethod]
+        public void TestMethodDivide()
+        {
+            int x = 10, y = 15;
+            Assert.AreEqual(x / y, WinFormsProj.DetriceClass4.Divide(x, y));
+        }
     }
 }
