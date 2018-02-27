@@ -24,5 +24,11 @@ namespace WinFormsTest {
             Assert.AreEqual(x * y, WinFormsProj.DetriceClass2.Multiply(x, y));
         }
 
+        [TestMethod]
+        public void TestMethodSubtract()
+        {
+            int x = 10, y = 15;
+            Assert.AreEqual(x - y, WinFormsProj.DetriceClass3.Subtract(x, y));
+        }
     }
 }
