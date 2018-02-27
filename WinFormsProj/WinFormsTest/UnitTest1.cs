@@ -10,12 +10,18 @@ namespace WinFormsTest {
             Assert.AreEqual("dummy", testStr);
         }
 
-
         [TestMethod]
         public void TestMethodSum()
         {
             int x = 10, y = 15;
             Assert.AreEqual(x + y, WinFormsProj.DetriceClassSum.GetSum(x, y));
+        }
+
+        [TestMethod]
+        public void TestMethodMultiply()
+        {
+            int x = 10, y = 15;
+            Assert.AreEqual(x * y, WinFormsProj.DetriceClass2.Multiply(x, y));
         }
 
     }
