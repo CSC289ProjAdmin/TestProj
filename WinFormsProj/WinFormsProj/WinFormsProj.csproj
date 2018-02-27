@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetriceClass2.cs" />
+    <Compile Include="DetriceClass3.cs" />
+    <Compile Include="DetriceClassSum.cs" />
     <Compile Include="Dummy.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
