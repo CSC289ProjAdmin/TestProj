@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace WinFormsProj
 {
-    class JodiClass4
+    public class JodiCLass4
     {
+        public static string GetDummyString()
+        {
+            return "dummy";
+        }
     }
 }
+
