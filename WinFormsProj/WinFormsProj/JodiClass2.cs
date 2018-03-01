@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace WinFormsProj
 {
-    class JodiClass2
+    public class TestDummy
     {
+        public static string TestGetDummyString()
+        {
+            return "dummy"; 
+        }
+        public static int jodi(int a, int b, int c)
+        {
+            int d = a + b + c;
+            return d;
+        }
     }
 }
+
