@@ -10,5 +10,13 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 Insert Into FirstTable
-    (Name, Amount)
-Values ('Ryan', 98.76);
+    (FirstName, Amount, LastName)
+Values ('Ryan', 98.76, 'Hollinger');
+
+Insert Into SecondTable
+	(StreetAddress, City, State, ZipCode)
+Values ('1003 Main St', 'Eden', 'NC', 27288);
+
+Insert Into ThirdTable	
+	(PhoneNum, FirstName, LastName, ZipCode)
+Values (336-772-8934, 'Tad', 'Jones', 27288);
