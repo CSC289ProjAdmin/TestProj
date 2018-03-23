@@ -7,4 +7,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ThirdID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="91b98a10-4504-4068-9a49-78d5b1452631" ChangeDateTime="03/23/2018 14:30:20">
+    <Property Name="ElementName" Value="[dbo].[FirstTable].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FirstTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FirstName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="46e923d5-3500-4b61-ac30-c18539963c42" ChangeDateTime="03/23/2018 14:30:58">
+    <Property Name="ElementName" Value="[dbo].[SecondTable].[Address]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SecondTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StreetAddress" />
+  </Operation>
 </Operations>
