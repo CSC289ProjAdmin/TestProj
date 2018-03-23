@@ -20,3 +20,5 @@ Values ('1003 Main St', 'Eden', 'NC', 27288);
 Insert Into ThirdTable	
 	(PhoneNum, FirstName, LastName, ZipCode)
 Values (336-772-8934, 'Tad', 'Jones', 27288);
+
+
