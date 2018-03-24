@@ -12,3 +12,8 @@ Post-Deployment Script Template
 Insert Into FirstTable
     (Name, Amount)
 Values ('Ryan', 98.76);
+
+
+Insert Into SecondTable
+	(Address)
+Values ('Some Address')
