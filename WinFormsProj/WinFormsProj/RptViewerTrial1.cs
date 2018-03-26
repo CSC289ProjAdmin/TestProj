@@ -15,8 +15,8 @@ namespace WinFormsProj {
         }
 
         private void RptViewerTrial1_Load(object sender, EventArgs e) {
-            // TODO: This line of code loads data into the 'WinFormsProjDBDataSet.FirstTable' table. You can move, or remove it, as needed.
-            this.FirstTableTableAdapter.Fill(this.WinFormsProjDBDataSet.FirstTable);
+            // TODO: This line of code loads data into the 'TestDBDataSet.FirstTable' table. You can move, or remove it, as needed.
+            this.FirstTableTableAdapter.Fill(this.TestDBDataSet.FirstTable);
 
             this.reportViewer1.RefreshReport();
         }

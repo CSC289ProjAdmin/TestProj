@@ -254,7 +254,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>0.5in</Height>
-        <Width>6.5in</Width>
+        <Width>6.50001in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -265,7 +265,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>6.50001in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -275,18 +275,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="WinFormsProjDBDataSet">
+    <DataSource Name="TestDBDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>c47353d5-6d79-4c2f-a2a2-b9233142528c</rd:DataSourceID>
+      <rd:DataSourceID>87a25955-562c-44a0-8876-db5929c9f0a6</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>WinFormsProjDBDataSet</DataSourceName>
+        <DataSourceName>TestDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -304,8 +304,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>WinFormsProjDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Users\Owner\My Documents\TestProj\WinFormsProj\WinFormsProj\WinFormsProjDBDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>TestDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Users\Owner\My Documents\TestProj\WinFormsProj\WinFormsProj\TestDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>FirstTable</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

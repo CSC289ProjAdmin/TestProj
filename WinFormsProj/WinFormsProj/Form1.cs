@@ -15,6 +15,7 @@ namespace WinFormsProj {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
+            /*
             ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["test"];
             string connStr = settings.ConnectionString;
             SqlConnection conn = new SqlConnection(connStr);
@@ -26,14 +27,18 @@ namespace WinFormsProj {
             rdr.Read(); // first line
             MessageBox.Show($"{rdr["Name"]}");
             rdr.Close();
+            */
         }
 
         private void Form1_Load(object sender, EventArgs e) {
+            
             // TODO: This line of code loads data into the 'WinFormsProjDBDataSet.FirstTable' table. You can move, or remove it, as needed.
-            this.FirstTableTableAdapter.Fill(this.WinFormsProjDBDataSet.FirstTable);
+            this.FirstTableTableAdapter.Fill(this.TestDBDataSet.FirstTable);
             reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
             reportViewer1.ShowProgress = true;
             this.reportViewer1.RefreshReport();
+            
+            MessageBox.Show("Test");
         }
     }
 }

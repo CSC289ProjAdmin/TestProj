@@ -26,10 +26,10 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.WinFormsProjDBDataSet = new WinFormsProj.WinFormsProjDBDataSet();
+            this.TestDBDataSet = new WinFormsProj.TestDBDataSet();
             this.FirstTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.FirstTableTableAdapter = new WinFormsProj.WinFormsProjDBDataSetTableAdapters.FirstTableTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.WinFormsProjDBDataSet)).BeginInit();
+            this.FirstTableTableAdapter = new WinFormsProj.TestDBDataSetTableAdapters.FirstTableTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.TestDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,15 +45,15 @@
             this.reportViewer1.Size = new System.Drawing.Size(639, 613);
             this.reportViewer1.TabIndex = 0;
             // 
-            // WinFormsProjDBDataSet
+            // TestDBDataSet
             // 
-            this.WinFormsProjDBDataSet.DataSetName = "WinFormsProjDBDataSet";
-            this.WinFormsProjDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.TestDBDataSet.DataSetName = "TestDBDataSet";
+            this.TestDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // FirstTableBindingSource
             // 
             this.FirstTableBindingSource.DataMember = "FirstTable";
-            this.FirstTableBindingSource.DataSource = this.WinFormsProjDBDataSet;
+            this.FirstTableBindingSource.DataSource = this.TestDBDataSet;
             // 
             // FirstTableTableAdapter
             // 
@@ -68,7 +68,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.WinFormsProjDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TestDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -78,8 +78,8 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource FirstTableBindingSource;
-        private WinFormsProjDBDataSet WinFormsProjDBDataSet;
-        private WinFormsProjDBDataSetTableAdapters.FirstTableTableAdapter FirstTableTableAdapter;
+        private TestDBDataSet TestDBDataSet;
+        private TestDBDataSetTableAdapters.FirstTableTableAdapter FirstTableTableAdapter;
     }
 }
 

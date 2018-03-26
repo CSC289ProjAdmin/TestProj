@@ -26,11 +26,20 @@ namespace WinFormsProj.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\WinFormsProjD" +
-            "B.mdf;Integrated Security=True")]
-        public string WinFormsProjDBConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSqlLocalDB;AttachDbFilename=|DataDirectory|\\TestDB.mdf;In" +
+            "tegrated Security=True;Connect Timeout=30")]
+        public string TestDBConnectionString {
             get {
-                return ((string)(this["WinFormsProjDBConnectionString"]));
+                return ((string)(this["TestDBConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        public string Setting {
+            get {
+                return ((string)(this["Setting"]));
             }
         }
     }
